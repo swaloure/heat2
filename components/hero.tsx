@@ -11,7 +11,7 @@ export function Hero() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero-bg.jpg"
+          src="/heat2/images/hero-bg.jpg"
           alt=""
           className="h-full w-full object-cover"
           aria-hidden="true"
