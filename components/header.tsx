@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { useTranslation } from "@/lib/i18n"
-import { LanguageSwitcher } from "@/components/language-switcher"
+
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -47,7 +47,6 @@ export function Header() {
 
         {/* Language + Mobile Toggle */}
         <div className="flex items-center gap-3">
-          <LanguageSwitcher className="hidden sm:flex" />
 
           {/* Mobile hamburger */}
           <button
@@ -96,9 +95,7 @@ export function Header() {
               {t(link.key)}
             </Link>
           ))}
-          <div className="mt-2 border-t border-border pt-3 pb-1">
-            <LanguageSwitcher />
-          </div>
+
         </nav>
       </div>
     </header>
