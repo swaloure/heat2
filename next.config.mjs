@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Uncomment the line below when deploying to GitHub Pages:
-  // output: 'export',
+  output: 'export',
+  basePath: '/heat2',
+  assetPrefix: '/heat2',
+  trailingSlash: true,
   typescript: {
     ignoreBuildErrors: true,
   },
